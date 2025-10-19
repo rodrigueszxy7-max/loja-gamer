@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechPoint</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ====== CABEÇALHO ====== -->
+  <header>
+    <div class="container">
+      <div class="logo">
+        <span class="logo-white">Tech</span><span class="logo-blue">Point</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#montagem">Montagem de PCs</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a href="#orcamento" class="btn">Solicitar Orçamento</a>
+
+      <div class="menu-btn" id="menu-btn">☰</div>
+    </div>
+
+    <div class="mobile-menu" id="mobile-menu">
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Produtos</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#montagem">Montagem de PCs</a>
+      <a href="#contato">Contato</a>
+      <a href="#orcamento" class="btn-mobile">Solicitar Orçamento</a>
+    </div>
+  </header>
+
+  <!-- ====== SEÇÃO HERO ====== -->
+  <section class="hero" id="inicio">
+    <div class="hero-content">
+      <h1>Onde Tecnologia e Performance se Encontram</h1>
+      <p>
+        Transforme suas ideias em realidade com quem entende de tecnologia de verdade.
+        Produtos de qualidade, serviços especializados e atendimento que faz a diferença.
+      </p>
+      <div class="hero-buttons">
+        <a href="#orcamento" class="btn-primary">Solicitar Orçamento</a>
+        <a href="#produtos" class="btn-secondary">Explorar Produtos</a>
+      </div>
+    </div>
+  </section>
+
+  <main>
+    <h1>Conteúdo de exemplo</h1>
+  </main>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
